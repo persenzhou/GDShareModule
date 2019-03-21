@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZq-MH-Jtc">
+                    <rect key="frame" x="0.0" y="453" width="375" height="214"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHF-XZ-agI">
+                            <rect key="frame" x="50" y="15" width="60" height="89"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-60" minY="59" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="22"/>
+                            <state key="normal" title="微信" image="sm_wx.png">
+                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7YH-vH-CAQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mh-Q7-Uxs">
+                            <rect key="frame" x="158" y="15" width="60" height="89"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="89" id="ePo-Gh-gzT"/>
+                                <constraint firstAttribute="width" constant="60" id="jTp-mP-uZG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-60" minY="59" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="22"/>
+                            <state key="normal" title="朋友圈" image="sm_friendcircle.png">
+                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="5G8-6a-BB7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="329-ul-rk4">
+                            <rect key="frame" x="266.5" y="15" width="60" height="89"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-60" minY="59" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="22"/>
+                            <state key="normal" title="微信收藏" image="sm_wxcollection.png">
+                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="deu-i4-lgw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgJ-Xm-7dG">
+                            <rect key="frame" x="50" y="111" width="60" height="89"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-60" minY="59" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="22"/>
+                            <state key="normal" title="微博" image="sm_sina.png">
+                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="TlN-7b-beP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqT-yy-XbS">
+                            <rect key="frame" x="158" y="111" width="60" height="89"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-60" minY="59" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="22"/>
+                            <state key="normal" title="QQ" image="sm_qq.png">
+                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Sim-5J-jNy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-pg-fF4">
+                            <rect key="frame" x="266.5" y="111" width="60" height="89"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-60" minY="59" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="22"/>
+                            <state key="normal" title="QQ空间" image="sm_qqspace.png">
+                                <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Qz-pQ-YDq"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wh1-9E-7vk">
+                            <rect key="frame" x="0.0" y="49" width="49" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Rj7-32-r8F"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEC-UR-glS">
+                            <rect key="frame" x="109" y="49" width="48.5" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YU3-UX-SEe">
+                            <rect key="frame" x="326.5" y="49" width="48.5" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uy-Uy-a4p">
+                            <rect key="frame" x="217.5" y="49" width="49" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="YU3-UX-SEe" firstAttribute="centerY" secondItem="wh1-9E-7vk" secondAttribute="centerY" id="0mn-o1-QHd"/>
+                        <constraint firstItem="cgJ-Xm-7dG" firstAttribute="height" secondItem="qqT-yy-XbS" secondAttribute="height" id="1Nc-Qp-MVa"/>
+                        <constraint firstItem="329-ul-rk4" firstAttribute="leading" secondItem="6uy-Uy-a4p" secondAttribute="trailing" constant="0.5" id="32V-gp-ws7"/>
+                        <constraint firstItem="qqT-yy-XbS" firstAttribute="width" secondItem="7mh-Q7-Uxs" secondAttribute="width" id="3fd-tl-HJE"/>
+                        <constraint firstItem="wh1-9E-7vk" firstAttribute="top" secondItem="qZq-MH-Jtc" secondAttribute="top" constant="49" id="4Ov-Dd-7qu"/>
+                        <constraint firstItem="pHF-XZ-agI" firstAttribute="leading" secondItem="wh1-9E-7vk" secondAttribute="trailing" constant="0.5" id="7sK-pM-mWz"/>
+                        <constraint firstItem="7mh-Q7-Uxs" firstAttribute="centerX" secondItem="qZq-MH-Jtc" secondAttribute="centerX" id="85J-sl-Pi4"/>
+                        <constraint firstItem="cgJ-Xm-7dG" firstAttribute="centerX" secondItem="pHF-XZ-agI" secondAttribute="centerX" id="8wq-xE-7od"/>
+                        <constraint firstItem="6uy-Uy-a4p" firstAttribute="leading" secondItem="eEC-UR-glS" secondAttribute="trailing" constant="60" id="ANU-xZ-cxc"/>
+                        <constraint firstItem="6uy-Uy-a4p" firstAttribute="width" secondItem="eEC-UR-glS" secondAttribute="width" id="AeX-gp-eX2"/>
+                        <constraint firstItem="pHF-XZ-agI" firstAttribute="height" secondItem="7mh-Q7-Uxs" secondAttribute="height" id="Cql-DD-ONs"/>
+                        <constraint firstAttribute="bottom" secondItem="qqT-yy-XbS" secondAttribute="bottom" constant="14" id="Doe-gT-MGN"/>
+                        <constraint firstItem="eEC-UR-glS" firstAttribute="leading" secondItem="wh1-9E-7vk" secondAttribute="trailing" constant="60" id="EBO-1F-QTA"/>
+                        <constraint firstItem="4hN-pg-fF4" firstAttribute="centerY" secondItem="qqT-yy-XbS" secondAttribute="centerY" id="HMN-2Y-WJS"/>
+                        <constraint firstItem="qqT-yy-XbS" firstAttribute="centerX" secondItem="7mh-Q7-Uxs" secondAttribute="centerX" id="PoT-or-Ane"/>
+                        <constraint firstItem="YU3-UX-SEe" firstAttribute="leading" secondItem="6uy-Uy-a4p" secondAttribute="trailing" constant="60" id="Pxe-bk-Qg0"/>
+                        <constraint firstItem="4hN-pg-fF4" firstAttribute="height" secondItem="qqT-yy-XbS" secondAttribute="height" id="U2f-FI-d6B"/>
+                        <constraint firstItem="eEC-UR-glS" firstAttribute="centerY" secondItem="wh1-9E-7vk" secondAttribute="centerY" id="Vjq-lZ-jfa"/>
+                        <constraint firstItem="cgJ-Xm-7dG" firstAttribute="width" secondItem="qqT-yy-XbS" secondAttribute="width" id="Wou-F3-xgy"/>
+                        <constraint firstAttribute="height" constant="214" id="ZPE-Go-M8s"/>
+                        <constraint firstItem="eEC-UR-glS" firstAttribute="width" secondItem="wh1-9E-7vk" secondAttribute="width" id="doK-it-2Ov"/>
+                        <constraint firstItem="YU3-UX-SEe" firstAttribute="height" secondItem="wh1-9E-7vk" secondAttribute="height" id="edX-tn-shl"/>
+                        <constraint firstItem="4hN-pg-fF4" firstAttribute="centerX" secondItem="329-ul-rk4" secondAttribute="centerX" id="ei6-nH-LcD"/>
+                        <constraint firstAttribute="trailing" secondItem="YU3-UX-SEe" secondAttribute="trailing" id="fwr-1d-DaT"/>
+                        <constraint firstItem="329-ul-rk4" firstAttribute="width" secondItem="7mh-Q7-Uxs" secondAttribute="width" id="hoY-eE-0Ki"/>
+                        <constraint firstItem="329-ul-rk4" firstAttribute="height" secondItem="7mh-Q7-Uxs" secondAttribute="height" id="hvM-ST-1TF"/>
+                        <constraint firstItem="YU3-UX-SEe" firstAttribute="leading" secondItem="329-ul-rk4" secondAttribute="trailing" constant="-0.5" id="jgb-of-nH6"/>
+                        <constraint firstItem="6uy-Uy-a4p" firstAttribute="height" secondItem="eEC-UR-glS" secondAttribute="height" id="kM5-as-T92"/>
+                        <constraint firstItem="wh1-9E-7vk" firstAttribute="leading" secondItem="qZq-MH-Jtc" secondAttribute="leading" id="nU8-Le-2iK"/>
+                        <constraint firstItem="eEC-UR-glS" firstAttribute="leading" secondItem="pHF-XZ-agI" secondAttribute="trailing" constant="-0.5" id="nfV-hr-5fs"/>
+                        <constraint firstItem="eEC-UR-glS" firstAttribute="height" secondItem="wh1-9E-7vk" secondAttribute="height" id="omu-Kb-wI6"/>
+                        <constraint firstItem="7mh-Q7-Uxs" firstAttribute="centerY" secondItem="qZq-MH-Jtc" secondAttribute="centerY" constant="-47.5" id="p48-BG-2cy"/>
+                        <constraint firstItem="qqT-yy-XbS" firstAttribute="height" secondItem="7mh-Q7-Uxs" secondAttribute="height" id="ph9-Aq-1oN"/>
+                        <constraint firstItem="pHF-XZ-agI" firstAttribute="centerY" secondItem="7mh-Q7-Uxs" secondAttribute="centerY" id="qgD-j2-H78"/>
+                        <constraint firstItem="329-ul-rk4" firstAttribute="centerY" secondItem="7mh-Q7-Uxs" secondAttribute="centerY" id="sRn-Lh-cMI"/>
+                        <constraint firstItem="YU3-UX-SEe" firstAttribute="width" secondItem="wh1-9E-7vk" secondAttribute="width" id="szB-cH-lsK"/>
+                        <constraint firstItem="4hN-pg-fF4" firstAttribute="width" secondItem="qqT-yy-XbS" secondAttribute="width" id="u9M-q0-CFc"/>
+                        <constraint firstItem="6uy-Uy-a4p" firstAttribute="centerY" secondItem="eEC-UR-glS" secondAttribute="centerY" id="ubQ-XO-Cpj"/>
+                        <constraint firstItem="cgJ-Xm-7dG" firstAttribute="centerY" secondItem="qqT-yy-XbS" secondAttribute="centerY" id="v9q-hL-Rkf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpL-Fd-EeW" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="453"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.34799706375838924" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="dismiss:" destination="iN0-l3-epB" eventType="touchUpInside" id="fyD-mx-MJN"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qZq-MH-Jtc" firstAttribute="top" secondItem="fpL-Fd-EeW" secondAttribute="bottom" id="0vN-bC-Ain"/>
+                <constraint firstAttribute="bottom" secondItem="qZq-MH-Jtc" secondAttribute="bottom" id="32F-Zk-Xa0"/>
+                <constraint firstAttribute="trailing" secondItem="fpL-Fd-EeW" secondAttribute="trailing" id="5Zg-3q-AOw"/>
+                <constraint firstItem="fpL-Fd-EeW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AbC-F3-v3R"/>
+                <constraint firstAttribute="trailing" secondItem="qZq-MH-Jtc" secondAttribute="trailing" id="Ad3-yB-IbN"/>
+                <constraint firstItem="fpL-Fd-EeW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E7A-Qv-mtU"/>
+                <constraint firstItem="qZq-MH-Jtc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wPZ-4G-Gvi"/>
+            </constraints>
+            <connections>
+                <outletCollection property="shareButtons" destination="pHF-XZ-agI" id="EIZ-um-OsM"/>
+                <outletCollection property="shareButtons" destination="7mh-Q7-Uxs" id="MhA-t3-fa1"/>
+                <outletCollection property="shareButtons" destination="329-ul-rk4" id="QKm-By-xJF"/>
+                <outletCollection property="shareButtons" destination="cgJ-Xm-7dG" id="AnW-jl-rfx"/>
+                <outletCollection property="shareButtons" destination="qqT-yy-XbS" id="db5-4e-tgs"/>
+                <outletCollection property="shareButtons" destination="4hN-pg-fF4" id="XBb-Yp-yTr"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="83.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sm_friendcircle.png" width="55" height="55"/>
+        <image name="sm_qq.png" width="55" height="55"/>
+        <image name="sm_qqspace.png" width="55" height="55"/>
+        <image name="sm_sina.png" width="55" height="55"/>
+        <image name="sm_wx.png" width="55" height="55"/>
+        <image name="sm_wxcollection.png" width="55" height="55"/>
+    </resources>
+</document>
